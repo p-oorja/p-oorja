@@ -1,10 +1,15 @@
-- 👋 Hi, I’m @p-oorja
-- 👀 I’m interested in machine learning
-- 🌱 I’m currently learning AI and ML codes
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me prashantaero@gmail.com
+To build the docker image run the following command:
+docker-compose build
 
-<!---
-p-oorja/p-oorja is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+To run the docker image:
+docker-compose up -d
+
+To see the api logs:
+docker-compose logs -f api
+
+To see the celery worker logs:
+docker-compose logs -f celery_worker
+
+Test end points with curl:
+curl http://127.0.0.1:5000/api/v1/test/flask
+curl http://127.0.0.1:5000/api/v1/test/test_celery
