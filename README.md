@@ -11,5 +11,7 @@ docker-compose logs -f api
 docker-compose logs -f celery_worker
 
 # Test end points with curl:
+## Test Flask
 curl http://127.0.0.1:5000/api/v1/test/flask
+## Test celery
 curl http://127.0.0.1:5000/api/v1/test/test_celery
