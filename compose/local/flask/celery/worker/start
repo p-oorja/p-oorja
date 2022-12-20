@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -o errexit
+set -o nounset
+
+#use flask command to run with watch dog
+flask celery_worker
